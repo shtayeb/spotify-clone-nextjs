@@ -12,6 +12,7 @@ export default function useSpotify() {
   useEffect(() => {
     if (session) {
       if (session.error === "RefreshAccessTokenError") {
+        console.log("in the useSpotify hook error ");
         signIn();
       }
 
