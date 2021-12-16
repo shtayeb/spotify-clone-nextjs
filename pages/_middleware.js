@@ -12,11 +12,14 @@ export async function middleware(req) {
   // 1 - if the token exist
   // 2 - login routes
   if (pathname.includes("/api/auth") || token) {
+    console.log("Middleware: first Done");
     return NextResponse.next();
   }
 
   // redirect otherwise
   if (!token && pathname !== "/login") {
+    console.log("Middleware: Second Done");
+
     return NextResponse.redirect("/login");
   }
 }
