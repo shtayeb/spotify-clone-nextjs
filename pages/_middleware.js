@@ -1,11 +1,14 @@
 import { getToken } from "next-auth/jwt";
 import { NextResponse } from "next/server";
 export async function middleware(req) {
+  const secret = process.env.JWT_SECRET;
   //  Token will exists if the use is logged in
+  // const basicAuth = req.cookies;
+  // const basicAuth = JSON.parse(req.cookies["session-token"] || "false");
+  // console.log("BasicAuth ", basicAuth);
   const token = await getToken({
     req,
-    secret: process.env.JWT_SECRET,
-    raw: true,
+    secret,
   });
 
   const { pathname } = req.nextUrl;

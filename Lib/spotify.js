@@ -1,26 +1,26 @@
 import SpotiyWebApi from "spotify-web-api-node";
 const scopes = [
-  "user-read-email",
+  // "user-read-email",
   "playlist-read-private",
   "streaming",
-  "user-read-private",
+  // "user-read-private",
   "user-library-read",
-  "user-top-read",
+  // // "user-top-read",
   "user-read-playback-state",
-  "user-notify-playback-state",
-  "user-read-current-playing",
-  "user-read-recently-played",
-  "user-follow-read",
+  // "user-notify-playback-state",
+  // "user-read-current-playing", //creates problem
+  // "user-read-recently-played",
+  // // "user-follow-read",
   "app-remote-control",
-  "user-library-modify",
-  "user-read-playback-position",
-  "user-modify-playback-state",
+  // // "user-library-modify",
+  // "user-read-playback-position",
+  // "user-modify-playback-state",
   "user-read-currently-playing",
   "playlist-read-collaborative",
 ].join(",");
 
 const params = {
-  scopes: scopes,
+  scope: scopes,
 };
 
 const queryParamString = new URLSearchParams(params);
