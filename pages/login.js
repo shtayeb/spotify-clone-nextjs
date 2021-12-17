@@ -1,4 +1,4 @@
-import { getProviders, getSession, signIn, useSession } from "next-auth/react";
+import { getProviders, getSession, signIn } from "next-auth/react";
 
 function Login({ providers }) {
   return (
