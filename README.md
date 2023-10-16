@@ -1,3 +1,11 @@
-http://localhost:3000/api/auth/callback/spotify
+# Spotify Clone 
+A spotify clone using spotify API.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Buit with
+- Next Js
+- Tailwind CSS
+
+[Demo](https://spotify-clone-nextjs-psi.vercel.app/login)
+
+## Screenshot
+![screenshot](https://shahryartayeb.com/assets/img/projects/spotify.png)
