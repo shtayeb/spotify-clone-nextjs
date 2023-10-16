@@ -1,5 +1,8 @@
 # Spotify Clone 
+[Demo](https://spotify-clone-nextjs-psi.vercel.app/login)
+
 A spotify clone using spotify API.
+
 
 ## Buit with
 - Next Js
@@ -7,7 +10,7 @@ A spotify clone using spotify API.
 - Recoil for state management
 - Tailwind CSS
 
-[Demo](https://spotify-clone-nextjs-psi.vercel.app/login)
+
 
 ## Screenshot
 ![screenshot](https://shahryartayeb.com/assets/img/projects/spotify.png)
